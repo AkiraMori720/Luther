@@ -1,0 +1,14 @@
+{
+  "name": "silo/delivery",
+  "description": "Delivery app",
+  "type": "project",
+  "require": {
+    "silassare/ozone": "=2.0.0"
+  },
+  "repositories": {
+    "silassare/ozone": {
+      "type": "vcs",
+      "url": "git@github.com:silassare/ozone.git"
+    }
+  }
+}

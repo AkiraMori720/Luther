@@ -1,0 +1,39 @@
+/** APP CUSTOM STYLE **/
+
+i.fa{
+	margin-right: 0.8em;
+}
+
+.navbar{
+	height: var(--header-height);
+}
+
+.dy-header-cart-btn{
+	font-size: 1.3em;
+}
+.dy-cart-page-body{
+	padding-top: var(--header-height);
+}
+.dy-cart-totals{
+	position: fixed;
+	width: 100vw;
+	top: var(--header-height);
+	left: 0;
+	z-index: var(--z-index-fixed);
+	padding: 1em;
+	background-color: var(--main-color-bg);
+	color:  var(--main-color-txt);
+	font-weight: bold;
+	text-align: center;
+}
+
+.dy-cart-pay-modal{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: var(--z-index-modal);
+	top: 0;
+	left: 0;
+	padding: var(--header-height) 1em 1em;
+	background: rgba(0,0,0,.3);
+}

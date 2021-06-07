@@ -1,0 +1,34 @@
+.o-row {
+	.fn-clearfix();
+
+	& > * {
+		position: relative;
+		float: left;
+	}
+}
+
+.fn-gen-size(o-col);
+
+@media (max-width: @var-screen-xs-max) {
+	.fn-gen-size(o-col-xs);
+}
+
+@media (min-width: @var-screen-sm-min) {
+	.fn-gen-size(o-col-sm);
+}
+
+@media (min-width: @var-screen-md-min) {
+	.fn-gen-size(o-col-md);
+}
+
+@media (min-width: @var-screen-lg-min) {
+	.fn-gen-size(o-col-lg);
+}
+
+@media (min-width: @var-screen-xl-min) {
+	.fn-gen-size(o-col-xl);
+}
+
+@media (min-width: @var-screen-xxl-min) {
+	.fn-gen-size(o-col-xxl);
+}

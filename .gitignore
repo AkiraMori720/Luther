@@ -1,0 +1,5 @@
+.idea/
+vendor/
+dashboard/package-lock.json
+dashboard/dist
+dashboard/node_modules/

@@ -1,0 +1,64 @@
+.fn-clearfix() {
+	&:before,
+	&:after {
+		content: ' ';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.fn-gen-size-custom(@prefix,@i) when (@i > 0) {
+	@fwa: (100% / 12) * @i;
+	@fwb: (100% / @i);
+
+	.@{prefix}-@{i} {
+		width: @fwa;
+	}
+
+	.@{prefix}-is-@{i} > .ow-col {
+		width: @fwb;
+	}
+
+	.@{prefix}-push-@{i} {
+		margin-left: @fwa;
+	}
+	.@{prefix}-pull-@{i} {
+		margin-right: @fwa;
+	}
+}
+
+.fn-gen-space-custom(@prefix,@i) when (@i > 0) {
+	@fwa: 0.25rem * @i;
+
+	.@{prefix}-pt-@{i} {
+		padding-top: @fwa;
+	}
+	.@{prefix}-pr-@{i} {
+		padding-right: @fwa;
+	}
+	.@{prefix}-pb-@{i} {
+		padding-bottom: @fwa;
+	}
+	.@{prefix}-pl-@{i} {
+		padding-left: @fwa;
+	}
+	.@{prefix}-mt-@{i} {
+		margin-top: @fwa;
+	}
+	.@{prefix}-mr-@{i} {
+		margin-right: @fwa;
+	}
+	.@{prefix}-mb-@{i} {
+		margin-bottom: @fwa;
+	}
+	.@{prefix}-ml-@{i} {
+		margin-left: @fwa;
+	}
+}
+
+.fn-gen-size(@prefix, @i: @var-max-col) when ( @i > 0 ) {
+	.fn-gen-size-custom(@prefix, @i);
+	.fn-gen-size(@prefix, @i - 1);
+}

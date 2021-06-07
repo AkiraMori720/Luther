@@ -1,0 +1,314 @@
+================================================================================
+2021-06-04 14:04:14
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php,
+	Line    : 39,
+	Code    : 500,
+	Message : Unable to get client with API key.,
+	Data    : {"api_key":"636453B6-C0B601E4-98B1029D-074F1080","_url":"http://localhost/","_method":"GET"},
+	Class   : OZONE\OZ\Exceptions\InternalErrorException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(123): OZONE\OZ\Core\Context->handle()
+#3 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#4 {main}
+========previous========
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php,
+	Line    : 67,
+	Code    : 2002,
+	Message : SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+,
+	Data    : [],
+	Class   : PDOException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php(67): PDO->__construct('mysql:host=loca...', 'root', '!silo!', Array)
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Db.php(79): Gobl\DBAL\Drivers\MySQL->connect()
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMResultsBase.php(71): Gobl\DBAL\Db->getConnection()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsResults.php(33): Gobl\ORM\ORMResultsBase->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder), 'OZONE\\OZ\\Db\\OZC...')
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMTableQueryBase.php(198): OZONE\OZ\Db\Base\OZClientsResults->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder))
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsQuery.php(49): Gobl\ORM\ORMTableQueryBase->find(1, 0, Array)
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php(36): OZONE\OZ\Db\Base\OZClientsQuery->find(1)
+#7 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#8 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#9 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(123): OZONE\OZ\Core\Context->handle()
+#10 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#11 {main}
+
+================================================================================
+2021-06-04 14:04:16
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php,
+	Line    : 39,
+	Code    : 500,
+	Message : Unable to get client with API key.,
+	Data    : {"api_key":"636453B6-C0B601E4-98B1029D-074F1080"},
+	Class   : OZONE\OZ\Exceptions\InternalErrorException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(574): OZONE\OZ\Core\Context->handle()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(547): OZONE\OZ\Core\Context->subRequestPath('/oz:error', Array, Array, true)
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(257): OZONE\OZ\Core\Context->subRequestRoute('oz:error', Array)
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(201): OZONE\OZ\Exceptions\BaseException->showCustomErrorPage(Object(OZONE\OZ\Core\Context))
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(128): OZONE\OZ\Exceptions\BaseException->informClient(Object(OZONE\OZ\Core\Context))
+#7 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#8 {main}
+========previous========
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php,
+	Line    : 67,
+	Code    : 2002,
+	Message : SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+,
+	Data    : [],
+	Class   : PDOException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php(67): PDO->__construct('mysql:host=loca...', 'root', '!silo!', Array)
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Db.php(79): Gobl\DBAL\Drivers\MySQL->connect()
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMResultsBase.php(71): Gobl\DBAL\Db->getConnection()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsResults.php(33): Gobl\ORM\ORMResultsBase->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder), 'OZONE\\OZ\\Db\\OZC...')
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMTableQueryBase.php(198): OZONE\OZ\Db\Base\OZClientsResults->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder))
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsQuery.php(49): Gobl\ORM\ORMTableQueryBase->find(1, 0, Array)
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php(36): OZONE\OZ\Db\Base\OZClientsQuery->find(1)
+#7 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#8 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#9 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(574): OZONE\OZ\Core\Context->handle()
+#10 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(547): OZONE\OZ\Core\Context->subRequestPath('/oz:error', Array, Array, true)
+#11 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(257): OZONE\OZ\Core\Context->subRequestRoute('oz:error', Array)
+#12 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(201): OZONE\OZ\Exceptions\BaseException->showCustomErrorPage(Object(OZONE\OZ\Core\Context))
+#13 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(128): OZONE\OZ\Exceptions\BaseException->informClient(Object(OZONE\OZ\Core\Context))
+#14 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#15 {main}
+
+================================================================================
+2021-06-04 14:04:38
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php,
+	Line    : 39,
+	Code    : 500,
+	Message : Unable to get client with API key.,
+	Data    : {"api_key":"636453B6-C0B601E4-98B1029D-074F1080","_url":"http://localhost/","_method":"GET"},
+	Class   : OZONE\OZ\Exceptions\InternalErrorException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(123): OZONE\OZ\Core\Context->handle()
+#3 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#4 {main}
+========previous========
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php,
+	Line    : 67,
+	Code    : 2002,
+	Message : SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+,
+	Data    : [],
+	Class   : PDOException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php(67): PDO->__construct('mysql:host=loca...', 'root', '!silo!', Array)
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Db.php(79): Gobl\DBAL\Drivers\MySQL->connect()
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMResultsBase.php(71): Gobl\DBAL\Db->getConnection()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsResults.php(33): Gobl\ORM\ORMResultsBase->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder), 'OZONE\\OZ\\Db\\OZC...')
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMTableQueryBase.php(198): OZONE\OZ\Db\Base\OZClientsResults->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder))
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsQuery.php(49): Gobl\ORM\ORMTableQueryBase->find(1, 0, Array)
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php(36): OZONE\OZ\Db\Base\OZClientsQuery->find(1)
+#7 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#8 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#9 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(123): OZONE\OZ\Core\Context->handle()
+#10 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#11 {main}
+
+================================================================================
+2021-06-04 14:04:40
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php,
+	Line    : 39,
+	Code    : 500,
+	Message : Unable to get client with API key.,
+	Data    : {"api_key":"636453B6-C0B601E4-98B1029D-074F1080"},
+	Class   : OZONE\OZ\Exceptions\InternalErrorException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(574): OZONE\OZ\Core\Context->handle()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(547): OZONE\OZ\Core\Context->subRequestPath('/oz:error', Array, Array, true)
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(257): OZONE\OZ\Core\Context->subRequestRoute('oz:error', Array)
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(201): OZONE\OZ\Exceptions\BaseException->showCustomErrorPage(Object(OZONE\OZ\Core\Context))
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(128): OZONE\OZ\Exceptions\BaseException->informClient(Object(OZONE\OZ\Core\Context))
+#7 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#8 {main}
+========previous========
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php,
+	Line    : 67,
+	Code    : 2002,
+	Message : SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+,
+	Data    : [],
+	Class   : PDOException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php(67): PDO->__construct('mysql:host=loca...', 'root', '!silo!', Array)
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Db.php(79): Gobl\DBAL\Drivers\MySQL->connect()
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMResultsBase.php(71): Gobl\DBAL\Db->getConnection()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsResults.php(33): Gobl\ORM\ORMResultsBase->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder), 'OZONE\\OZ\\Db\\OZC...')
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMTableQueryBase.php(198): OZONE\OZ\Db\Base\OZClientsResults->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder))
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsQuery.php(49): Gobl\ORM\ORMTableQueryBase->find(1, 0, Array)
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php(36): OZONE\OZ\Db\Base\OZClientsQuery->find(1)
+#7 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#8 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#9 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(574): OZONE\OZ\Core\Context->handle()
+#10 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(547): OZONE\OZ\Core\Context->subRequestPath('/oz:error', Array, Array, true)
+#11 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(257): OZONE\OZ\Core\Context->subRequestRoute('oz:error', Array)
+#12 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(201): OZONE\OZ\Exceptions\BaseException->showCustomErrorPage(Object(OZONE\OZ\Core\Context))
+#13 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(128): OZONE\OZ\Exceptions\BaseException->informClient(Object(OZONE\OZ\Core\Context))
+#14 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#15 {main}
+
+================================================================================
+2021-06-04 14:24:32
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php,
+	Line    : 39,
+	Code    : 500,
+	Message : Unable to get client with API key.,
+	Data    : {"api_key":"636453B6-C0B601E4-98B1029D-074F1080","_url":"http://localhost/","_method":"GET"},
+	Class   : OZONE\OZ\Exceptions\InternalErrorException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(123): OZONE\OZ\Core\Context->handle()
+#3 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#4 {main}
+========previous========
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php,
+	Line    : 67,
+	Code    : 1045,
+	Message : SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES),
+	Data    : [],
+	Class   : PDOException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php(67): PDO->__construct('mysql:host=loca...', 'root', '!silo!', Array)
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Db.php(79): Gobl\DBAL\Drivers\MySQL->connect()
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMResultsBase.php(71): Gobl\DBAL\Db->getConnection()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsResults.php(33): Gobl\ORM\ORMResultsBase->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder), 'OZONE\\OZ\\Db\\OZC...')
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMTableQueryBase.php(198): OZONE\OZ\Db\Base\OZClientsResults->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder))
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsQuery.php(49): Gobl\ORM\ORMTableQueryBase->find(1, 0, Array)
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php(36): OZONE\OZ\Db\Base\OZClientsQuery->find(1)
+#7 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#8 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#9 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(123): OZONE\OZ\Core\Context->handle()
+#10 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#11 {main}
+
+================================================================================
+2021-06-04 14:24:32
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php,
+	Line    : 39,
+	Code    : 500,
+	Message : Unable to get client with API key.,
+	Data    : {"api_key":"636453B6-C0B601E4-98B1029D-074F1080"},
+	Class   : OZONE\OZ\Exceptions\InternalErrorException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(574): OZONE\OZ\Core\Context->handle()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(547): OZONE\OZ\Core\Context->subRequestPath('/oz:error', Array, Array, true)
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(257): OZONE\OZ\Core\Context->subRequestRoute('oz:error', Array)
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(201): OZONE\OZ\Exceptions\BaseException->showCustomErrorPage(Object(OZONE\OZ\Core\Context))
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(128): OZONE\OZ\Exceptions\BaseException->informClient(Object(OZONE\OZ\Core\Context))
+#7 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#8 {main}
+========previous========
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php,
+	Line    : 67,
+	Code    : 1045,
+	Message : SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES),
+	Data    : [],
+	Class   : PDOException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Drivers\MySQL.php(67): PDO->__construct('mysql:host=loca...', 'root', '!silo!', Array)
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\DBAL\Db.php(79): Gobl\DBAL\Drivers\MySQL->connect()
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMResultsBase.php(71): Gobl\DBAL\Db->getConnection()
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsResults.php(33): Gobl\ORM\ORMResultsBase->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder), 'OZONE\\OZ\\Db\\OZC...')
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\gobl\src\ORM\ORMTableQueryBase.php(198): OZONE\OZ\Db\Base\OZClientsResults->__construct(Object(Gobl\DBAL\Drivers\MySQL), Object(Gobl\DBAL\QueryBuilder))
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Db\Base\OZClientsQuery.php(49): Gobl\ORM\ORMTableQueryBase->find(1, 0, Array)
+#6 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\ClientManager.php(36): OZONE\OZ\Db\Base\OZClientsQuery->find(1)
+#7 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(930): OZONE\OZ\Core\ClientManager::getClientWithApiKey('636453B6-C0B601...')
+#8 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(189): OZONE\OZ\Core\Context->getApiKeyClient('636453B6-C0B601...')
+#9 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(574): OZONE\OZ\Core\Context->handle()
+#10 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(547): OZONE\OZ\Core\Context->subRequestPath('/oz:error', Array, Array, true)
+#11 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(257): OZONE\OZ\Core\Context->subRequestRoute('oz:error', Array)
+#12 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Exceptions\BaseException.php(201): OZONE\OZ\Exceptions\BaseException->showCustomErrorPage(Object(OZONE\OZ\Core\Context))
+#13 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(128): OZONE\OZ\Exceptions\BaseException->informClient(Object(OZONE\OZ\Core\Context))
+#14 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#15 {main}
+
+================================================================================
+2021-06-04 14:52:20
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Hooks\MainHookReceiver.php,
+	Line    : 94,
+	Code    : 404,
+	Message : OZ_ERROR_NOT_FOUND,
+	Data    : {"_url":"http://localhost/gewgew","_method":"GET"},
+	Class   : OZONE\OZ\Exceptions\NotFoundException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Hooks\MainHookProvider.php(121): OZONE\OZ\Hooks\MainHookReceiver->onRouteNotFound(Object(OZONE\OZ\Hooks\HookContext))
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Hooks\HookProvider.php(148): OZONE\OZ\Hooks\MainHookProvider->OZONE\OZ\Hooks\{closure}(Object(OZONE\OZ\Hooks\MainHookReceiver))
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Hooks\MainHookProvider.php(124): OZONE\OZ\Hooks\HookProvider->loop('onRouteNotFound', Object(Closure), Object(Closure))
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(674): OZONE\OZ\Hooks\MainHookProvider->triggerRouteNotFound(Object(OZONE\OZ\Core\Context))
+#4 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(209): OZONE\OZ\Core\Context->processRequest()
+#5 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(123): OZONE\OZ\Core\Context->handle()
+#6 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#7 {main}
+
+================================================================================
+2021-06-04 17:35:51
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php,
+	Line    : 1185,
+	Code    : 0,
+	Message : Invalid HTTP method 'PROPFIND',
+	Data    : [],
+	Class   : InvalidArgumentException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(153): OZONE\OZ\Http\Request->filterMethod('PROPFIND')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(1213): OZONE\OZ\Http\Request->__construct('PROPFIND', Object(OZONE\OZ\Http\Uri), Object(OZONE\OZ\Http\Headers), Array, Array, Object(OZONE\OZ\Http\RequestBody), Array)
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(134): OZONE\OZ\Http\Request::createFromEnvironment(Object(OZONE\OZ\Http\Environment))
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(111): OZONE\OZ\Core\Context->__construct(Object(OZONE\OZ\Http\Environment), NULL, false, false)
+#4 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#5 {main}
+
+================================================================================
+2021-06-04 17:35:52
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php,
+	Line    : 1185,
+	Code    : 0,
+	Message : Invalid HTTP method 'PROPFIND',
+	Data    : [],
+	Class   : InvalidArgumentException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(153): OZONE\OZ\Http\Request->filterMethod('PROPFIND')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(1213): OZONE\OZ\Http\Request->__construct('PROPFIND', Object(OZONE\OZ\Http\Uri), Object(OZONE\OZ\Http\Headers), Array, Array, Object(OZONE\OZ\Http\RequestBody), Array)
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(134): OZONE\OZ\Http\Request::createFromEnvironment(Object(OZONE\OZ\Http\Environment))
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(111): OZONE\OZ\Core\Context->__construct(Object(OZONE\OZ\Http\Environment), NULL, false, false)
+#4 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#5 {main}
+
+================================================================================
+2021-06-04 17:35:52
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php,
+	Line    : 1185,
+	Code    : 0,
+	Message : Invalid HTTP method 'PROPFIND',
+	Data    : [],
+	Class   : InvalidArgumentException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(153): OZONE\OZ\Http\Request->filterMethod('PROPFIND')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(1213): OZONE\OZ\Http\Request->__construct('PROPFIND', Object(OZONE\OZ\Http\Uri), Object(OZONE\OZ\Http\Headers), Array, Array, Object(OZONE\OZ\Http\RequestBody), Array)
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(134): OZONE\OZ\Http\Request::createFromEnvironment(Object(OZONE\OZ\Http\Environment))
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(111): OZONE\OZ\Core\Context->__construct(Object(OZONE\OZ\Http\Environment), NULL, false, false)
+#4 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#5 {main}
+
+================================================================================
+2021-06-04 17:35:52
+========================
+	File    : E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php,
+	Line    : 1185,
+	Code    : 0,
+	Message : Invalid HTTP method 'PROPFIND',
+	Data    : [],
+	Class   : InvalidArgumentException,
+	Trace   : #0 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(153): OZONE\OZ\Http\Request->filterMethod('PROPFIND')
+#1 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Http\Request.php(1213): OZONE\OZ\Http\Request->__construct('PROPFIND', Object(OZONE\OZ\Http\Uri), Object(OZONE\OZ\Http\Headers), Array, Array, Object(OZONE\OZ\Http\RequestBody), Array)
+#2 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\Core\Context.php(134): OZONE\OZ\Http\Request::createFromEnvironment(Object(OZONE\OZ\Http\Environment))
+#3 E:\Ales\Luthorr\Src\BackEnd\vendor\silassare\ozone\oz\OZone.php(111): OZONE\OZ\Core\Context->__construct(Object(OZONE\OZ\Http\Environment), NULL, false, false)
+#4 E:\Ales\Luthorr\Src\BackEnd\www\index.php(39): OZONE\OZ\OZone::run(Object(DELIVERY\App\DeliveryApp))
+#5 {main}
+
